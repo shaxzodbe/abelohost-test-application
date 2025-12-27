@@ -1,0 +1,8 @@
+vendor/
+node_modules/
+.idea/
+.DS_Store
+storage/smarty/templates_c/
+storage/smarty/cache/
+*.log
+docker-compose.override.yml
