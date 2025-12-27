@@ -1,0 +1,33 @@
+.btn-outline {
+    border: 2px solid $border-color;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+
+    &:hover {
+        border-color: $primary-color;
+        background: $primary-color;
+        color: white;
+    }
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.sort-options a {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: white;
+    font-size: 0.9rem;
+
+    &.active {
+        background: $primary-color;
+        color: white;
+    }
+}

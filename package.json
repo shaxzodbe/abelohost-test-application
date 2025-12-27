@@ -1,0 +1,12 @@
+{
+    "name": "blog-app-assets",
+    "version": "1.0.0",
+    "description": "Asset build scripts",
+    "scripts": {
+        "build": "sass resources/scss/style.scss public/css/style.css --no-source-map",
+        "watch": "sass --watch resources/scss/style.scss:public/css/style.css"
+    },
+    "devDependencies": {
+        "sass": "^1.69.0"
+    }
+}

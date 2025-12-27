@@ -1,0 +1,30 @@
+.site-header {
+    background: $card-bg;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $primary-color;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    font-weight: 600;
+}
+
+.site-main {
+    padding: $spacing 0;
+    min-height: 80vh;
+}

@@ -1,0 +1,72 @@
+// Variables
+$primary-color: #2c3e50;
+$accent-color: #e74c3c;
+$text-color: #333;
+$bg-color: #f8f9fa;
+$card-bg: #fff;
+$border-color: #e9ecef;
+$font-heading: 'Outfit', sans-serif;
+$font-body: 'Outfit', sans-serif;
+$spacing: 2rem;
+
+// Reset & Base
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-body;
+    background-color: $bg-color;
+    color: $text-color;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+// Components
+@import 'header';
+@import 'cards';
+@import 'buttons';
+@import 'pagination';
+@import 'footer';
+@import 'pages';
+
+// Utilities
+.divider {
+    height: 1px;
+    background: $border-color;
+    margin: 4rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: $primary-color;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
