@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .card {
     background: $card-bg;
     border-radius: 12px;
