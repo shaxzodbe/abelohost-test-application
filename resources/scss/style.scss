@@ -1,36 +1,5 @@
 @use 'variables' as *;
-
-// Reset & Base
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: $font-body;
-    background-color: $bg-color;
-    color: $text-color;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s;
-
-    &:hover {
-        color: $accent-color;
-    }
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-// Components
+@use 'base';
 @use 'header';
 @use 'cards';
 @use 'buttons';
